@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import CartIcon from "./CartIcon";
+import { useDispatch } from "react-redux";
+import { addCart } from "../store/action";
 
 export default function ProductCard({ addToCart, item }) {
+  const dispatch = useDispatch();
+  const onClick = () => {
+    dispatch(addCart(item));
+  };
   return (
     <Card>
       <Img src={item.product_img} />
       <Title>{item.product_name}</Title>
       <Price>{item.price.toLocaleString()} 원</Price>
-      <AddCartBtn onClick={() => addToCart()}>
+      <AddCartBtn onClick={onClick}>
         <CartIcon width="16" height="16" />
         <span>장바구니 담기</span>
       </AddCartBtn>

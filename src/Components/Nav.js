@@ -7,7 +7,7 @@ export default function Nav({ itemCount }) {
   const history = useHistory();
 
   useEffect(() => {
-    console.log("Nav render");
+    // console.log("Nav render");
   });
 
   return (

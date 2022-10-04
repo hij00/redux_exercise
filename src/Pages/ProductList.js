@@ -4,7 +4,7 @@ import ProductCard from "../Components/ProductCard";
 
 function ProductList({ addToCart }) {
   useEffect(() => {
-    console.log("ProductList render");
+    // console.log("ProductList render");
   });
 
   return (

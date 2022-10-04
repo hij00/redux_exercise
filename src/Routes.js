@@ -8,7 +8,7 @@ function Routes() {
   const [cartItems, setCartItems] = useState(CART_ITEM);
 
   useEffect(() => {
-    console.log("Routes render");
+    // console.log("Routes render");
   });
 
   const filterItem = (idx) => {
